@@ -1,5 +1,6 @@
 default: run
 build:
+	bazel sync --only pypi
 	bazel build app
 run:
 	bazel run app

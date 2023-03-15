@@ -36,7 +36,7 @@ pip_parse(
     name = "pypi",
     enable_implicit_namespace_pkgs = True,
     python_interpreter_target = python_interpreter,
-    requirements_linux = "//:requirements_linux.txt",
+    requirements_linux = "//:requirements.txt",
 )
 
 load("@pypi//:requirements.bzl", install_python_deps = "install_deps")
